@@ -15,7 +15,7 @@ public class NumerosAleatorisGit {
         ArrayList<Integer> array = new ArrayList<Integer>();
 
         for (int j = 0; j < 10; j++) {
-            array.add(aleatoris.nextInt(500000));
+            array.add(aleatoris.nextInt(1000000));
 
         }
         Collections.sort(array);
