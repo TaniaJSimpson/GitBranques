@@ -8,13 +8,14 @@ import java.util.Random;
 public class NumerosAleatorisGit {
 
     public static void main(String[] args) {
-//
+
         Random aleatoris = new Random();
         Scanner lector = new Scanner(System.in);
 
         ArrayList<Integer> array = new ArrayList<Integer>();
 
         for (int j = 0; j < 10; j++) {
+        	//MODIFICAT A 1000000
             array.add(aleatoris.nextInt(1000000));
 
         }
