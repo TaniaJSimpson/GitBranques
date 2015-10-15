@@ -8,7 +8,7 @@ import java.util.Random;
 public class NumerosAleatorisGit {
 
     public static void main(String[] args) {
-
+//
         Random aleatoris = new Random();
         Scanner lector = new Scanner(System.in);
 
