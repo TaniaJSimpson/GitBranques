@@ -21,7 +21,7 @@ public class NumerosAleatorisGit {
         }
         Collections.sort(array);
         System.out.println(array);
-
+//HAURIA DE BUSCAR ELS NÚMEROS MÉS RÀPID
         long x = System.nanoTime();
         boolean b = true;
         System.out.println("Entra un enter: ");
