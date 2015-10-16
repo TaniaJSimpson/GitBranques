@@ -7,44 +7,40 @@ import java.util.Random;
 
 public class NumerosAleatorisGit {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        Random aleatoris = new Random();
-        Scanner lector = new Scanner(System.in);
+		Random aleatoris = new Random();
+		Scanner lector = new Scanner(System.in);
 
-        ArrayList<Integer> array = new ArrayList<Integer>();
+		ArrayList<Integer> array = new ArrayList<Integer>();
 
-        for (int j = 0; j < 10; j++) {
-        	//MODIFICAT A 1000000!
-            array.add(aleatoris.nextInt(1000000));
+		for (int j = 0; j < 10; j++) {
 
-        }
-        Collections.sort(array);
-        System.out.println(array);
-//HAURIA DE BUSCAR ELS NÚMEROS MÉS RÀPID
-        long x = System.nanoTime();
-        boolean b = true;
-        System.out.println("Entra un enter: ");
-        int num = lector.nextInt();
-        for (int i = 0; i < array.size(); i++) {
-            if (num == array.get(i)) {
-                long y = System.nanoTime();
-                long time = (y - x) / 1000;
-                System.out.println("He tardat " + time + " milisegons en trobar el número.");
-                break;
+			array.add(aleatoris.nextInt(500000));
 
-            } else {
-                b = false;
-            }
-        }
-        if (b == false) {
-            System.out.println("No es troba dins dels que ha generat el prograqma.");
-        }
+		}
+		Collections.sort(array);
+		System.out.println(array);
 
-    }
+		long x = System.nanoTime();
+		boolean b = true;
+		System.out.println("Entra un enter: ");
+		int num = lector.nextInt();
+		for (int i = 0; i < array.size(); i++) {
+			if (num == array.get(i)) {
+				long y = System.nanoTime();
+				long time = (y - x) / 1000;
+				System.out.println("He tardat " + time + " milisegons en trobar el número.");
+				break;
 
-}      
+			} else {
+				b = false;
+			}
+		}
+		if (b == false) {
+			System.out.println("No es troba dins dels que ha generat el prograqma.");
+		}
 
-	    
+	}
 
-
+}
